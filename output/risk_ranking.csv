@@ -1,0 +1,31 @@
+country,rank,slippage_days,impact_score,driver,evidence
+Japan,1,186,334800000,STARTING_DOSE_UNAVAILABLE,2MG pack ships 2027-07-04 vs market claim 2027-01-29; no patient can start before it
+Korea,2,71,27006270,SHIPMENT_BEFORE_APPROVAL,"MTS cannot ship before target approval; claimed 2026-12-16, earliest = approval target"
+Vietnam,3,107,25680000,DEMAND_NEVER_LOADED,demand never loaded; earliest = today + site lead time; claimed 2026-06-25
+Colombia,4,148,20720000,STARTING_DOSE_UNAVAILABLE,2MG pack ships 2027-06-21 vs market claim 2027-01-24; no patient can start before it
+Malaysia,5,83,16600000,DEMAND_NEVER_LOADED,demand never loaded; earliest = today + site lead time; claimed 2026-07-19
+Turkey,6,48,12480000,SHIPMENT_BEFORE_APPROVAL,"MTS cannot ship before target approval; claimed 2026-06-20, earliest = approval target"
+Denmark,7,152,9424000,STARTING_DOSE_UNAVAILABLE,2MG pack ships 2027-04-05 vs market claim 2026-11-04; no patient can start before it
+Romania,8,66,7260000,SHIPMENT_BEFORE_APPROVAL,"MTS cannot ship before target approval; claimed 2026-08-30, earliest = approval target"
+Ireland,9,29,3480000,SETUP_DATE_AFTER_SHIPMENT,plant/warehouse setup after claimed ship 2026-09-15; earliest = setup date
+Czechia,10,23,2185000,SETUP_DATE_AFTER_SHIPMENT,plant/warehouse setup after claimed ship 2026-12-03; earliest = setup date
+Finland,11,30,1650000,PLANT_CAPACITY_EXCEEDED,"site over annual capacity; launch falls after the capacity cut-off, +30 days (shortfall / daily build rate)"
+Peru,12,18,1080000,DEMAND_LOADED_TOO_LATE,demand loaded + site lead time later than claimed 2026-09-28 by 18 days
+Estonia,13,30,660000,PLANT_CAPACITY_EXCEEDED,"site over annual capacity; launch falls after the capacity cut-off, +30 days (shortfall / daily build rate)"
+United States,14,0,0,NONE,no problem found
+Germany,15,0,0,NONE,no problem found
+China,16,0,0,NONE,no problem found
+Brazil,17,0,0,NONE,no problem found
+Canada,18,0,0,NONE,no problem found
+Italy,19,0,0,NONE,no problem found
+Mexico,20,0,0,NONE,no problem found
+Spain,21,0,0,NONE,no problem found
+Poland,22,0,0,NONE,no problem found
+Greece,23,0,0,NONE,no problem found
+Portugal,24,0,0,NONE,no problem found
+Chile,25,0,0,NONE,no problem found
+Hungary,26,0,0,NONE,no problem found
+Norway,27,0,0,NONE,no problem found
+Bulgaria,28,0,0,NONE,no problem found
+Slovakia,29,0,0,NONE,no problem found
+Croatia,30,0,0,NONE,no problem found

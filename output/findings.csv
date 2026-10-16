@@ -1,0 +1,19 @@
+what,where,proof
+COUNTRY_NAME_WHITESPACE,United States,"Name has trailing space in some monthly tabs, splitting the market in a group-by"
+STATUS_VALUE_DRIFT,Malaysia,Launch Status is 'Active' with inconsistent casing/whitespace (active / ACTIVE / trailing space)
+STATUS_INVALID_ENTRY,Greece,Launch Status holds a non-status value ('Invalid Entry') on a row of an otherwise active market
+DATE_STORED_AS_NUMBER,Expected Launch Shipment Date,Column loads as Excel serial integers in at least one monthly tab; converted to dates
+DUPLICATE_ROW,Colombia,Same market+SKU appears twice in one extract with conflicting expected shipment dates
+SKU_NOT_IN_REFERENCE,Vietnam,SKU(s) VLR-16MG-4PEN missing from Ref_SKUs
+APPROVAL_BEFORE_SUBMISSION,China;Croatia,National-pathway approval date precedes own filing date (Reliance/Mutual Recognition markets excluded: legitimate)
+APPROVAL_TARGET_NOT_ACTUAL,Colombia;Denmark;Japan,Target approval date already passed on 2026-04-25 but Actual Approval Date is blank
+BLANK_TREATED_AS_PASS,Malaysia;Vietnam,"Direct-supply market never answered plant/demand readiness (blank, not No); dashboard counts silence as yes"
+DEMAND_NEVER_LOADED,Malaysia;Vietnam,No demand-loaded flag or date in any extract for a direct-supply market
+FLAG_YES_BUT_NO_DATE,Canada;Germany;Japan,Readiness flag is Yes but its setup/load date is blank (direct-supply market)
+DEMAND_LOADED_TOO_LATE,Peru;Romania;Turkey,Demand loaded + site lead time lands after the expected shipment date
+SETUP_DATE_AFTER_SHIPMENT,Czechia;Denmark;Ireland,Primary-site plant/warehouse setup falls after expected shipment (Secondary sites excluded by design)
+SHIPMENT_BEFORE_APPROVAL,Korea;Romania;Turkey,MTS market expects/ships before approval; MTO bonded-warehouse pattern excluded
+STARTING_DOSE_UNAVAILABLE,Colombia;Denmark;Japan,2MG initiation-dose pack ships later than the market's other packs; patients cannot start
+ROLLUP_ANY_NOT_ALL,Colombia;Denmark;Japan,"Dashboard reads market ready when any pack is ready, but initiation-dose pack is not"
+PLANT_CAPACITY_EXCEEDED,Estonia;Finland;Japan,Site need exceeds annual capacity; launches after the cut-off slip by shortfall/daily build rate
+DATE_MOVED_WITHOUT_RECORD,Spain;United States,Expected shipment date moved between monthly extracts with no Shipment Date Change Log entry (logged moves excluded)

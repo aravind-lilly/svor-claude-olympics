@@ -1,0 +1,11 @@
+# All packages must come from Lilly's JFrog Artifactory — see README.md for details.
+# This starter needs openpyxl to read the .xlsx pack (pandas + openpyxl is the simplest route).
+# If your own tool needs additional packages, list them here with exact pinned versions.
+et_xmlfile==2.0.0
+numpy==2.5.4
+openpyxl==3.1.5
+pandas==2.2.3
+python-dateutil==2.9.0.post0
+pytz==2026.5
+six==1.17.0
+tzdata==2026.5
